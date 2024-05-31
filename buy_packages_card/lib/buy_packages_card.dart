@@ -40,7 +40,7 @@ class BuyPackageCard extends StatelessWidget {
     this.text1 = '24/7 Customer Support',
     this.text2 = '100+ Audio Calls',
     this.text3 = '200+ Video Calls',
-    this.text4 = '100+ Mintues',
+    this.text4 = '100+ Minutes',
   });
 
   @override

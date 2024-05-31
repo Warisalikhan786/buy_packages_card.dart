@@ -15,4 +15,47 @@ To use this package in your Flutter project, add `buy_packages_card` as a depend
 
 ```yaml
 dependencies:
-  buy_packages_card: ^1.0.0  # Replace with the latest version
+  buy_packages_card: ^1.0.4  # Replace with the latest version
+
+  How to use:
+
+```dart
+
+import 'package:buy_packages_card/buy_packages_card.dart';
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("buy_packages_card"),
+        centerTitle: true,
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          BuyPackageCard(
+            packageName: "Basic package",
+            packagePrice: "4,000 PKR",
+            packageDuration: 'Per/Month',
+            buttonOntap: () {},
+            quickStartText: "Quick Start",
+            quickStartButtonOnTap: () {},
+            buttonTextStyle: const TextStyle(color: Colors.white),
+            buttonText: "Buy Now",
+            text1: "24/7 Customer Support",
+            text2: "100+ Audio Calls",
+            text3: "200+ Video Calls",
+            text4: "100+ minutes",
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+```
